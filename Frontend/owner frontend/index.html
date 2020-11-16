@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.418.0.min.js"></script>
+
+    <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <script type="text/javascript" src="apigClient.js"></script> 
+
+</head>
+
+<body onload="visitorImg.src=getImageURL();">
+    <div class="container">
+        <h3>Contact Form</h3>
+        <img id="visitorImg" src="" width="160px" height="auto"/><br/><br/>
+        <input id="name" style="height:40px;font-size:20px" placeholder="Visitor Name" type="text" tabindex="1" required autofocus><br/> 
+        <input id="number" style="height:40px;font-size:20px" placeholder="Visitor Phone Number" type="tel" tabindex="3" required><br/><br/>
+        <button name="submit" style="height:60px;width:100px;border-radius:10px" type="submit" id="contact-submit" onclick="submit()">Submit</button>
+        <div id="response"></div>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
